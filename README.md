@@ -18,18 +18,18 @@ The dataset for this project comprises heartbeat signals from two renowned sourc
 </div>
 
 ## Methodology
-### Imbalanced Data
+* ### Imbalanced Data
 The project addresses imbalanced data prevalent in binary classification by employing the Synthetic Minority Oversampling Technique (**SMOTE**) and Edited Nearest Neighbours (**ENN**). SMOTE generates synthetic data points to achieve a balanced dataset, while ENN removes misclassified instances, enhancing the model's generalization and performance​​.  
 
 <img src="/image/after.png" width = "200" height = "150" alt="cmo" /> <img src="/image/before.png" width = "200" height = "150" alt="cmo" />  
-### Residual Networks (ResNet)  
+* ### Residual Networks (ResNet)  
 The model is comprised of ResNet residual block with the ECG data points as input and target class categories as outputs. ResNet-18 used as model for classifying ECG signals in this project. Two batch normalization layers were integrated into each residual block. This architecture improves learning by directly propagating feature maps from earlier to later layers, optimizing the network's performance without complicating the model unnecessarily​​.  
 <img src="/image/restnet.png" width = "550" height = "150" alt="cmo" />  
-### Transfer Learning  
+* ### Transfer Learning  
 The model is comprised of ResNet residual block with the ECG data points as input and target class categories as outputs.The project leverages transfer learning to apply knowledge from pre-trained models on the MIT-BIH dataset to classify arrhythmias in the PTB Diagnostic ECG Database. This approach enables the reuse of learned features, reducing the need for extensive dataset-specific training and enhancing model adaptability across different tasks​​.  
 <img src="/image/transferlearningmodel.png" width = "300" height = "200" alt="cmo" />  
 
-### Model Tuning  
+* ### Model Tuning  
 Model tuning is achieved through **cyclical learning rates** and **grid search** methods, focusing on optimizing hyperparameters for improved accuracy. **Cyclical learning rates** adjust the learning rate between set boundaries in a predefined manner, while **grid search** systematically explores various hyperparameter combinations to identify the most effective model configuration​  
 
 ## Result
