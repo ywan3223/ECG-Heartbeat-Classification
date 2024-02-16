@@ -1,4 +1,4 @@
-# :heartbeat:ECG Heartbeat Classification  
+# :heartbeat:ECG Heartbeat Classification in Healthcare Industry - Deep Learning
 
 This project develops a sophisticated model for ECG heartbeat classification to identify various arrhythmias, leveraging the **ResNet** and **transfer learning** techniques. Utilizing the MIT-BIH Arrhythmia Dataset and the PTB Diagnostic ECG Database, the model overcomes **data imbalance** with SMOTE and ENN, achieving an optimized accuracy of 99.743%. This approach significantly enhances the detection and classification of **cardiovascular diseases**, offering a pivotal tool for medical diagnostics and patient care.  
 
